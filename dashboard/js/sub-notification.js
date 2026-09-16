@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!toggleNotifications) return;
 
     // Direct production endpoint
-    const BACKEND_SETTINGS_URL = "https://broker-rho.vercel.app/api/notifications";
+    const BACKEND_SETTINGS_URL = "https://bank-app-api-cyan.vercel.app/api/notifications";
     const APP_SIGNATURE = "kredi-dot";
 
     // Hardcoded VAPID Public Key matching the admin implementation

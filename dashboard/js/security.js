@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const session = JSON.parse(rawSession);
     const userEmail = session.email;
 
-    const BACKEND_SETTINGS_URL = "https://broker-rho.vercel.app/api/settings";
-    const BACKEND_LOGIN_URL = "https://broker-rho.vercel.app/api/login-user";
+    const BACKEND_SETTINGS_URL = "https://bank-app-api-cyan.vercel.app/api/settings";
+    const BACKEND_LOGIN_URL = "https://bank-app-api-cyan.vercel.app/api/login-user";
     const APP_SIGNATURE = "kredi-dot";
 
     const keypadAudio = new Audio("../assets/single-keypad.mp3");
