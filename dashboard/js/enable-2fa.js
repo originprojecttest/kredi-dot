@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             }
         };
 
-        if (typeof window.showOnflexSwal === "function") {
-            return window.showOnflexSwal(mergedOptions);
+        if (typeof window.showKreditDotSwal === "function") {
+            return window.showKreditDotSwal(mergedOptions);
         }
         return Swal.fire(mergedOptions);
     };

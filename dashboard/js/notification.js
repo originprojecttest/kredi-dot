@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * ONFLEX APPLICATION UNIFIED NOTIFICATION SUBSYSTEM (DATABASE CONNECTED)
+ * Kreditdot APPLICATION UNIFIED NOTIFICATION SUBSYSTEM (DATABASE CONNECTED)
  * ==========================================================================
  */
 document.addEventListener("DOMContentLoaded", () => {

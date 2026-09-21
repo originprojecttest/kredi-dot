@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * ONFLEX APPLICATION UNIFIED POPUP SYSTEM & LIVE CORE HANDLERS
+ * Kreditdot APPLICATION UNIFIED POPUP SYSTEM & LIVE CORE HANDLERS
  * ==========================================================================
  */
 document.addEventListener("DOMContentLoaded", async () => {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // ----------------------------------------------------------------------
     let accountNumber = "9834 0291 8843 0192"; // Fallbacks
     let clearAccountNumber = "9834029188430192";
-    let userFullName = "Kredit-Dot Settlement Desk";
+    let userFullName = "KreditDot Settlement Desk";
     let dynamicAccountType = "Corporate Escrow Vault";
 
     const rawSession = localStorage.getItem("user_session");
@@ -72,23 +72,23 @@ document.addEventListener("DOMContentLoaded", async () => {
     // PHASE 2: INJECT ADVANCED MODERN POPUPS INTO THE DOM
     // ----------------------------------------------------------------------
     const injectPopupStructures = () => {
-        if (document.getElementById("onflexDepositPopup")) return;
+        if (document.getElementById("kreditdotDepositPopup")) return;
 
         const markup = `
-            <div id="onflexDepositPopup" class="onflex-popup-overlay">
-                <div class="onflex-popup-card advanced-deposit-card">
-                    <div class="onflex-popup-header">
+            <div id="kreditdotDepositPopup" class="kreditdot-popup-overlay">
+                <div class="kreditdot-popup-card advanced-deposit-card">
+                    <div class="kreditdot-popup-header">
                         <h3>Bank Deposit Details</h3>
-                        <button class="onflex-popup-close" data-close-popup>&times;</button>
+                        <button class="kreditdot-popup-close" data-close-popup>&times;</button>
                     </div>
-                    <div class="onflex-popup-body">
+                    <div class="kreditdot-popup-body">
                         <p class="popup-intro-text">Use the credentials below to transfer funds via wire or online banking app.</p>
                         
                         <div class="deposit-grid-layout">
                             <div class="deposit-row-item">
                                 <span class="row-label">Bank Name</span>
                                 <div class="row-value-wrapper">
-                                    <span class="row-text-value">Kredit-Dot Bank</span>
+                                    <span class="row-text-value">KreditDot Bank</span>
                                 </div>
                             </div>
                             
@@ -125,13 +125,13 @@ document.addEventListener("DOMContentLoaded", async () => {
                 </div>
             </div>
 
-            <div id="onflexTransferPopup" class="onflex-popup-overlay">
-                <div class="onflex-popup-card matrix-card">
-                    <div class="onflex-popup-header">
+            <div id="kreditdotTransferPopup" class="kreditdot-popup-overlay">
+                <div class="kreditdot-popup-card matrix-card">
+                    <div class="kreditdot-popup-header">
                         <h3>Send & Transfer Capital</h3>
-                        <button class="onflex-popup-close" data-close-popup>&times;</button>
+                        <button class="kreditdot-popup-close" data-close-popup>&times;</button>
                     </div>
-                    <div class="onflex-popup-body matrix-hub-body">
+                    <div class="kreditdot-popup-body matrix-hub-body">
                         <p class="popup-intro-text">Choose your preferred transaction network parameters:</p>
                         
                         <div class="matrix-routing-grid">
@@ -159,13 +159,13 @@ document.addEventListener("DOMContentLoaded", async () => {
                 </div>
             </div>
 
-            <div id="onflexHistoryPopup" class="onflex-popup-overlay">
-                <div class="onflex-popup-card matrix-card">
-                    <div class="onflex-popup-header">
+            <div id="kreditdotHistoryPopup" class="kreditdot-popup-overlay">
+                <div class="kreditdot-popup-card matrix-card">
+                    <div class="kreditdot-popup-header">
                         <h3>Transaction History Ledger</h3>
-                        <button class="onflex-popup-close" data-close-popup>&times;</button>
+                        <button class="kreditdot-popup-close" data-close-popup>&times;</button>
                     </div>
-                    <div class="onflex-popup-body matrix-hub-body">
+                    <div class="kreditdot-popup-body matrix-hub-body">
                         <p class="popup-intro-text">Select account network to view historical data logs:</p>
                         
                         <div class="matrix-routing-grid">
@@ -206,16 +206,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     };
     injectPopupStructures();
 
-    const depositOverlay = document.getElementById("onflexDepositPopup");
-    const transferOverlay = document.getElementById("onflexTransferPopup");
-    const historyOverlay = document.getElementById("onflexHistoryPopup");
+    const depositOverlay = document.getElementById("kreditdotDepositPopup");
+    const transferOverlay = document.getElementById("kreditdotTransferPopup");
+    const historyOverlay = document.getElementById("kreditdotHistoryPopup");
 
     // ----------------------------------------------------------------------
     // PHASE 3: EVENT DELEGATION WITH PAGE EXCLUSION FILTERS
     // ----------------------------------------------------------------------
     document.body.addEventListener("click", (e) => {
         // 1. Dismiss Modals Click Configuration
-        if (e.target.hasAttribute("data-close-popup") || e.target.classList.contains("onflex-popup-overlay")) {
+        if (e.target.hasAttribute("data-close-popup") || e.target.classList.contains("kreditdot-popup-overlay")) {
             depositOverlay.classList.remove("visible");
             transferOverlay.classList.remove("visible");
             historyOverlay.classList.remove("visible");

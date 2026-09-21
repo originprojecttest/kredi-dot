@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     Didn't get code? <button type="button" id="retryTokenBtn" disabled style="background: none; border: none; color: #94a3b8; font-weight: 600; cursor: not-allowed; text-decoration: underline; padding: 0;">Resend Code (20s)</button>
                 </div>
             `,
-            customClass: { popup: 'onflex-swal-popup' },
+            customClass: { popup: 'kreditdot-swal-popup' },
             showConfirmButton: false,
             showCancelButton: true,
             cancelButtonText: 'Cancel',
@@ -401,7 +401,7 @@ document.addEventListener('DOMContentLoaded', () => {
                            style="width: 100%; padding: 14px 20px; border: 1px solid #cbd5e1; border-radius: 999px; font-size: 16px !important; outline: none; box-sizing: border-box; color: #0f172a;">
                 </div>
             `,
-            customClass: { popup: 'onflex-swal-popup' },
+            customClass: { popup: 'kreditdot-swal-popup' },
             focusConfirm: false,
             showCancelButton: true,
             confirmButtonText: 'Save Password',

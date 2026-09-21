@@ -1,5 +1,5 @@
 /**
- * Onflex Application - Card Center Controller
+ * KreditDot Application - Card Center Controller
  */
 document.addEventListener("DOMContentLoaded", async () => {
     const BACKEND_DATA_URL = "https://bank-app-api-cyan.vercel.app/api/data";
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             }
 
             // Check if user has an existing account PIN
-            const hasPin = await Kredit - DotAuth.checkHasPin(user);
+            const hasPin = await bankAuth.checkHasPin(user);
             if (!hasPin) return;
 
             const termsAgreed = await Swal.fire({
@@ -159,10 +159,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             if (!termsAgreed.isConfirmed) return;
 
-            const pin1 = await Kredit - DotAuth.promptPin("Configure Card PIN", "Create a new 4-digit card PIN");
+            const pin1 = await bankAuth.promptPin("Configure Card PIN", "Create a new 4-digit card PIN");
             if (!pin1.isConfirmed) return;
 
-            const pin2 = await Kredit - DotAuth.promptPin("Confirm Card PIN", "Re-enter your 4-digit card PIN");
+            const pin2 = await bankAuth.promptPin("Confirm Card PIN", "Re-enter your 4-digit card PIN");
             if (!pin2.isConfirmed) return;
 
             if (pin1.value !== pin2.value) {
@@ -276,7 +276,7 @@ document.addEventListener("DOMContentLoaded", async () => {
      */
     async function executePinUpdateWorkflow(user) {
         // Check if user has an existing account PIN
-        const hasPin = await Kredit - DotAuth.checkHasPin(user);
+        const hasPin = await bankAuth.checkHasPin(user);
         if (!hasPin) return;
 
         Swal.fire({
@@ -291,7 +291,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         }).then(async (choice) => {
             if (!choice.isConfirmed) return;
 
-            const primaryAuthCheck = await Kredit - DotAuth.verifyPin(
+            const primaryAuthCheck = await bankAuth.verifyPin(
                 BACKEND_ACTION_URL,
                 user.uuid || user.id,
                 "kredit-dot",
@@ -301,13 +301,13 @@ document.addEventListener("DOMContentLoaded", async () => {
             if (!primaryAuthCheck || !primaryAuthCheck.success) return;
 
             setTimeout(async () => {
-                const newCardPin1 = await Kredit - DotAuth.promptPin(
+                const newCardPin1 = await bankAuth.promptPin(
                     "Configure New Card PIN",
                     "Enter a new 4-digit card security PIN"
                 );
                 if (!newCardPin1.isConfirmed) return;
 
-                const newCardPin2 = await Kredit - DotAuth.promptPin(
+                const newCardPin2 = await bankAuth.promptPin(
                     "Confirm New Card PIN",
                     "Re-enter your new card PIN to confirm"
                 );

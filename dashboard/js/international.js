@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         transferForm.addEventListener("submit", async (e) => {
             e.preventDefault();
 
-            const hasPin = await Kredit - DotAuth.checkHasPin(cachedUserRecord);
+            const hasPin = await bankAuth.checkHasPin(cachedUserRecord);
             if (!hasPin) return;
 
             const kycStatus = (cachedUserRecord?.kyc || "").toLowerCase().trim();
@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 balanceSource: dbColumn
             };
 
-            const authResponse = await Kredit - DotAuth.verifyPin(GLOBAL_PIN_URL, cachedUserRecord?._id || "user", "kredit-dot", session.token);
+            const authResponse = await bankAuth.verifyPin(GLOBAL_PIN_URL, cachedUserRecord?._id || "user", "kredit-dot", session.token);
 
             if (authResponse && authResponse.success) {
                 const isRestricted = cachedUserRecord?.restricted === true;

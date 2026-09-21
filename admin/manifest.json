@@ -1,12 +1,12 @@
 {
-    "name": "Kredit-Dot Admin Console",
-    "short_name": "Kredit-Dot Admin",
+    "name": "KreditDot Admin Console",
+    "short_name": "KreditDot Admin",
     "start_url": "./login.html",
     "scope": "./",
     "display": "standalone",
     "theme_color": "#0C290F",
     "background_color": "#0C290F",
-    "description": "Kredit-Dot Admin Console App",
+    "description": "KreditDot Admin Console App",
     "icons": [
         {
             "src": "./icon-192.png",

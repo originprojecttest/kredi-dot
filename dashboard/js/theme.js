@@ -1,11 +1,11 @@
 /**
  * ==========================================================================
- * ONFLEX APPLICATION UNIFIED THEME RUNTIME INTERFACE
+ * Kreditdot APPLICATION UNIFIED THEME RUNTIME INTERFACE
  * ==========================================================================
  */
 document.addEventListener("DOMContentLoaded", () => {
     // Read theme attribute value (or default to dark mode if not explicitly mapped yet)
-    const savedTheme = localStorage.getItem("onflex-theme") || "dark";
+    const savedTheme = localStorage.getItem("kreditdot-theme") || "dark";
     document.documentElement.setAttribute("data-theme", savedTheme);
 
     // COMPATIBLE MULTI-SELECTOR EVENT DELEGATION THEME CONTROLLER
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const targetTheme = currentTheme === "dark" ? "light" : "dark";
 
         document.documentElement.setAttribute("data-theme", targetTheme);
-        localStorage.setItem("onflex-theme", targetTheme);
+        localStorage.setItem("kreditdot-theme", targetTheme);
 
         // Toggle layout visibility settings for nested sun and moon icons if provided
         const sunIcons = themeTrigger.querySelectorAll(".sun-icon");

@@ -1,12 +1,12 @@
 {
-    "name": "Kredit-Dot",
-    "short_name": "Kredit-Dot",
+    "name": "kreditDot",
+    "short_name": "kreditDot",
     "start_url": "/app.html",
     "scope": "/",
     "display": "standalone",
     "theme_color": "#0C290F",
     "background_color": "#0C290F",
-    "description": "Kredit-Dot Finance Banking App",
+    "description": "KreditDot Finance Banking App",
     "icons": [
         {
             "src": "icon-192.png",

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Kredit-Dot Core Desktop Fluid Layout Stylesheet 
+   KreditDot Core Desktop Fluid Layout Stylesheet 
    ========================================================================== */
 
 input,
@@ -189,13 +189,13 @@ input:focus {
     }
 }
 
-/* Custom SweetAlert Injection Themes to fit Kredit-Dot */
-.onflex-swal-popup {
+/* Custom SweetAlert Injection Themes to fit KreditDot */
+.kreditdot-swal-popup {
     border-radius: 16px !important;
     font-family: "Segoe UI", sans-serif !important;
 }
 
-.onflex-swal-input {
+.kreditdot-swal-input {
     border-radius: 999px !important;
     padding: 12px 20px !important;
     font-size: 16px !important;

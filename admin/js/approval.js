@@ -1,5 +1,5 @@
 /**
- * ONFLEX ADMIN CONSOLE - APPROVALS CONTROL MODULE
+ * Kreditdot ADMIN CONSOLE - APPROVALS CONTROL MODULE
  */
 
 export function syncApprovalFormFields(userObject) {

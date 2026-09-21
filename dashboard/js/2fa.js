@@ -1,5 +1,5 @@
 /**
- * ONFLEX PREMIUM - 2FA TOGGLE & LOGOUT CONTROLLER
+ * Kreditdot PREMIUM - 2FA TOGGLE & LOGOUT CONTROLLER
  */
 document.addEventListener('DOMContentLoaded', () => {
     console.log("🚀 [2FA Module] Initialized and listening...");

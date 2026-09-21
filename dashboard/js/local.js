@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     transferForm.addEventListener("submit", async (e) => {
         e.preventDefault();
 
-        const hasPin = await Kredit - DotAuth.checkHasPin(cachedUserRecord);
+        const hasPin = await bankAuth.checkHasPin(cachedUserRecord);
         if (!hasPin) return;
 
         const uiSelection = balanceSelect.value;
@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         if (!confirmResult.isConfirmed) return;
 
-        const authenticationChallenge = await Kredit - DotAuth.verifyPin(
+        const authenticationChallenge = await bankAuth.verifyPin(
             GLOBAL_PIN_URL,
             session.user?.id || session.user?.uuid || cachedUserRecord?.uuid,
             "kredit-dot",

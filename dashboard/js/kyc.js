@@ -1,5 +1,5 @@
 /**
- * ONFLEX PREMIUM - MULTI-STEP KYC VERIFICATION SYSTEM ENGINE
+ * Kreditdot PREMIUM - MULTI-STEP KYC VERIFICATION SYSTEM ENGINE
  */
 document.addEventListener('DOMContentLoaded', () => {
     const actionVerifyAccount = document.getElementById('actionVerifyAccount');
