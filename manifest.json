@@ -1,6 +1,6 @@
 {
-    "name": "kredi-dot",
-    "short_name": "kredi-dot",
+    "name": "Kredit-Dot",
+    "short_name": "Kredit-Dot",
     "start_url": "/app.html",
     "scope": "/",
     "display": "standalone",

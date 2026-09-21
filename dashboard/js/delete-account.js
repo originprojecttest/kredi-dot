@@ -1,5 +1,5 @@
 /**
- * Kredit-Dot PREMIUM - ACCOUNT TERMINATION CONTROLLER
+ * ONFLEX PREMIUM - ACCOUNT TERMINATION CONTROLLER
  */
 document.addEventListener('DOMContentLoaded', () => {
     const actionDeleteAccount = document.getElementById('actionDeleteAccount');

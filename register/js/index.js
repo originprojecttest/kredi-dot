@@ -1,6 +1,6 @@
 // ===== API Connection Core Parameters =====
 const BACKEND_URL = "https://bank-app-api-cyan.vercel.app/api/register-user";
-const APP_SIGNATURE = "kredi-dot";
+const APP_SIGNATURE = "kredit-dot";
 
 // ===== UI Reference Elements =====
 const form = document.getElementById('signupForm');

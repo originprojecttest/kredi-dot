@@ -1,8 +1,8 @@
 /* ==========================================================================
-   Kredit-Dot FINANCED DASHBOARD - AUTHENTIC VARIABLE OVERLAY STYLES
+   ONFLEX FINANCED DASHBOARD - AUTHENTIC VARIABLE OVERLAY STYLES
    ========================================================================== */
 
-.kredi-dot-popup-overlay {
+.onflex-popup-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -20,13 +20,13 @@
     padding: 16px;
 }
 
-.kredi-dot-popup-overlay.visible {
+.onflex-popup-overlay.visible {
     opacity: 1;
     pointer-events: auto;
 }
 
 /* Master Overlay Window Panel Base */
-.kredi-dot-popup-card {
+.onflex-popup-card {
     background-color: var(--bg-card);
     border: 1px solid var(--border-ui);
     width: 100%;
@@ -38,12 +38,12 @@
     overflow: hidden;
 }
 
-.kredi-dot-popup-overlay.visible .kredi-dot-popup-card {
+.onflex-popup-overlay.visible .onflex-popup-card {
     transform: scale(1) translateY(0);
 }
 
 /* Modal Title bar Component */
-.kredi-dot-popup-header {
+.onflex-popup-header {
     background-color: var(--bg-main);
     padding: 16px 20px;
     border-bottom: 1px solid var(--border-ui);
@@ -52,7 +52,7 @@
     align-items: center;
 }
 
-.kredi-dot-popup-header h3 {
+.onflex-popup-header h3 {
     font-size: 15px;
     font-weight: 700;
     color: var(--text-main) !important;
@@ -60,7 +60,7 @@
     letter-spacing: -0.01em;
 }
 
-.kredi-dot-popup-close {
+.onflex-popup-close {
     background: transparent;
     border: none;
     font-size: 24px;
@@ -71,11 +71,11 @@
     padding: 4px;
 }
 
-.kredi-dot-popup-close:hover {
+.onflex-popup-close:hover {
     color: var(--text-main);
 }
 
-.kredi-dot-popup-body {
+.onflex-popup-body {
     padding: 22px 20px;
     display: flex;
     flex-direction: column;
@@ -278,12 +278,12 @@
    MOBILE SCREEN DROPDOWN ACTION SHEET OVERRIDES
    ========================================================================== */
 @media (max-width: 767px) {
-    .kredi-dot-popup-overlay {
+    .onflex-popup-overlay {
         align-items: flex-end;
         padding: 0;
     }
 
-    .kredi-dot-popup-card {
+    .onflex-popup-card {
         max-width: 100%;
         border-radius: 20px 20px 0 0;
         border-bottom: none;
@@ -293,11 +293,11 @@
         transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.12);
     }
 
-    .kredi-dot-popup-overlay.visible .kredi-dot-popup-card {
+    .onflex-popup-overlay.visible .onflex-popup-card {
         transform: translateY(0);
     }
 
-    .kredi-dot-popup-body {
+    .onflex-popup-body {
         padding: 20px 20px 32px 20px;
     }
 }
@@ -307,14 +307,14 @@
    ========================================================================== */
 
 /* Dark Mode Modal Overlay Base */
-html[data-theme="dark"] .kredi-dot-popup-card {
+html[data-theme="dark"] .onflex-popup-card {
     background-color: var(--bg-card) !important;
     border-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 /* Tier 1 (Teal/Default) */
-html[data-theme="dark"] body[data-tier="1"] .kredi-dot-popup-header,
-html[data-theme="dark"] body:not([data-tier]) .kredi-dot-popup-header {
+html[data-theme="dark"] body[data-tier="1"] .onflex-popup-header,
+html[data-theme="dark"] body:not([data-tier]) .onflex-popup-header {
     background-color: rgba(76, 195, 217, 0.05) !important;
     border-bottom-color: rgba(76, 195, 217, 0.2) !important;
 }
@@ -357,7 +357,7 @@ html[data-theme="dark"] body:not([data-tier]) .advanced-status-banner {
 }
 
 /* Tier 2 (Blue) */
-html[data-theme="dark"] body[data-tier="2"] .kredi-dot-popup-header {
+html[data-theme="dark"] body[data-tier="2"] .onflex-popup-header {
     background-color: rgba(37, 99, 235, 0.05) !important;
     border-bottom-color: rgba(37, 99, 235, 0.2) !important;
 }
@@ -393,7 +393,7 @@ html[data-theme="dark"] body[data-tier="2"] .advanced-status-banner {
 }
 
 /* Tier 3 (Gold / Bronze) */
-html[data-theme="dark"] body[data-tier="3"] .kredi-dot-popup-header {
+html[data-theme="dark"] body[data-tier="3"] .onflex-popup-header {
     background-color: rgba(180, 83, 9, 0.05) !important;
     border-bottom-color: rgba(180, 83, 9, 0.2) !important;
 }

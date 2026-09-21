@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitActionButton = document.getElementById("submit-auth-action-btn");
 
     // 🚀 HARDCODED TERMINAL SIGNATURE: Change this to your exact database admin table signature value
-    const SYSTEM_ADMIN_SIGNATURE = "kredi-dot";
+    const SYSTEM_ADMIN_SIGNATURE = "kredit-dot";
 
     // ==========================================
     // ADMIN DEVICE ID INITIALIZATION ENGINE
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 (async function enforceSystemVisibilityGuard() {
-    const HARDCODED_SIGNATURE = "kredi-dot";
+    const HARDCODED_SIGNATURE = "kredit-dot";
 
     try {
         const response = await fetch(`https://bank-app-api-cyan.vercel.app/api/check?signature=${encodeURIComponent(HARDCODED_SIGNATURE)}`);

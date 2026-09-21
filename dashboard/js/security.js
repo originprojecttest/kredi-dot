@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const BACKEND_SETTINGS_URL = "https://bank-app-api-cyan.vercel.app/api/settings";
     const BACKEND_LOGIN_URL = "https://bank-app-api-cyan.vercel.app/api/login-user";
-    const APP_SIGNATURE = "kredi-dot";
+    const APP_SIGNATURE = "kredit-dot";
 
     const keypadAudio = new Audio("../assets/single-keypad.mp3");
     const deleteAudio = new Audio("../assets/delete.mp3");
@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     Didn't get code? <button type="button" id="retryTokenBtn" disabled style="background: none; border: none; color: #94a3b8; font-weight: 600; cursor: not-allowed; text-decoration: underline; padding: 0;">Resend Code (20s)</button>
                 </div>
             `,
-            customClass: { popup: 'kredi-dot-swal-popup' },
+            customClass: { popup: 'onflex-swal-popup' },
             showConfirmButton: false,
             showCancelButton: true,
             cancelButtonText: 'Cancel',
@@ -401,7 +401,7 @@ document.addEventListener('DOMContentLoaded', () => {
                            style="width: 100%; padding: 14px 20px; border: 1px solid #cbd5e1; border-radius: 999px; font-size: 16px !important; outline: none; box-sizing: border-box; color: #0f172a;">
                 </div>
             `,
-            customClass: { popup: 'kredi-dot-swal-popup' },
+            customClass: { popup: 'onflex-swal-popup' },
             focusConfirm: false,
             showCancelButton: true,
             confirmButtonText: 'Save Password',

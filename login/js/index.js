@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     const BACKEND_URL = "https://bank-app-api-cyan.vercel.app/api/login-user";
-    const APP_SIGNATURE = "kredi-dot";
+    const APP_SIGNATURE = "kredit-dot";
 
     // IMPORTANT: Use relative web paths, not local disk paths (/Users/abc/...)
     const KEYPAD_SOUND_URL = "../assets/single-keypad.mp3";
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         Swal.fire({
             title: 'Verifying Credentials...',
             text: 'Connecting to secure server...',
-            customClass: { popup: 'kredi-dot-swal-popup' },
+            customClass: { popup: 'onflex-swal-popup' },
             didOpen: () => Swal.showLoading(),
             allowOutsideClick: false
         });
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     Didn't get code? <button type="button" id="retryTokenBtn" disabled style="background: none; border: none; color: #94a3b8; font-weight: 600; cursor: not-allowed; text-decoration: underline; padding: 0;">Resend Code (20s)</button>
                 </div>
             `,
-            customClass: { popup: 'kredi-dot-swal-popup' },
+            customClass: { popup: 'onflex-swal-popup' },
             showConfirmButton: false,
             showCancelButton: true,
             cancelButtonText: 'Cancel Login',
@@ -316,7 +316,7 @@ function handleForgotPasswordFlow(apiEndpoint, appSignature, playKeypadSound, pl
                        style="width: 100%; padding: 14px 20px; border: 1px solid #cbd5e1; border-radius: 999px; font-size: 16px !important; outline: none; box-sizing: border-box; height: auto; margin: 10px 0 0 0;">
             </div>
         `,
-        customClass: { popup: 'kredi-dot-swal-popup' },
+        customClass: { popup: 'onflex-swal-popup' },
         showCancelButton: true,
         confirmButtonText: 'Send Code',
         confirmButtonColor: '#0a698f',
@@ -375,7 +375,7 @@ function handleForgotPasswordOTPStep(userId, userEmail, apiEndpoint, appSignatur
                 <button type="button" class="ios-key-action" id="ios-delete-pw-btn" style="width: 64px; height: 64px; font-size: 14px; font-weight: 600; color: #64748b; background: transparent; border: none; cursor: pointer; outline: none;">Delete</button>
             </div>
         `,
-        customClass: { popup: 'kredi-dot-swal-popup' },
+        customClass: { popup: 'onflex-swal-popup' },
         showConfirmButton: false,
         showCancelButton: true,
         cancelButtonText: 'Cancel',
@@ -462,7 +462,7 @@ function handleCommitNewPasswordStep(userId, apiEndpoint) {
                        style="width: 100%; padding: 14px 20px; border: 1px solid #cbd5e1; border-radius: 999px; font-size: 16px !important; outline: none; box-sizing: border-box; height: auto; margin: 0;">
             </div>
         `,
-        customClass: { popup: 'kredi-dot-swal-popup' },
+        customClass: { popup: 'onflex-swal-popup' },
         focusConfirm: false,
         showCancelButton: true,
         confirmButtonText: 'Update Password',

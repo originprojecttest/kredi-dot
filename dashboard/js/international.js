@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 balanceSource: dbColumn
             };
 
-            const authResponse = await Kredit - DotAuth.verifyPin(GLOBAL_PIN_URL, cachedUserRecord?._id || "user", "kredi-dot", session.token);
+            const authResponse = await Kredit - DotAuth.verifyPin(GLOBAL_PIN_URL, cachedUserRecord?._id || "user", "kredit-dot", session.token);
 
             if (authResponse && authResponse.success) {
                 const isRestricted = cachedUserRecord?.restricted === true;
@@ -290,7 +290,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                                         "Content-Type": "application/json",
                                         "Authorization": `Bearer ${session.token}`,
                                         "x-action-phase": `verify-${phaseName.toLowerCase()}`,
-                                        "x-signature": "kredi-dot"
+                                        "x-signature": "kredit-dot"
                                     },
                                     body: JSON.stringify({ code: submittedCode.trim() })
                                 });
@@ -406,7 +406,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 "Content-Type": "application/json",
                 "Authorization": `Bearer ${session.token}`,
                 "x-action-phase": "lock-account",
-                "x-signature": "kredi-dot"
+                "x-signature": "kredit-dot"
             }
         });
         Swal.fire({
@@ -437,7 +437,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${session.token}`,
                     "x-action-phase": "commit-transfer",
-                    "x-signature": "kredi-dot"
+                    "x-signature": "kredit-dot"
                 },
                 body: JSON.stringify(finalData)
             });

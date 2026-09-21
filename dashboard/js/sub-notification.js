@@ -1,5 +1,5 @@
 /**
- * Kredit-Dot PREMIUM - PUSH NOTIFICATION SUBSCRIPTION ENGINE
+ * ONFLEX PREMIUM - PUSH NOTIFICATION SUBSCRIPTION ENGINE
  */
 document.addEventListener('DOMContentLoaded', async () => {
     const toggleNotifications = document.getElementById('toggleNotifications');
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Direct production endpoint
     const BACKEND_SETTINGS_URL = "https://bank-app-api-cyan.vercel.app/api/notifications";
-    const APP_SIGNATURE = "kredi-dot";
+    const APP_SIGNATURE = "kredit-dot";
 
     // Hardcoded VAPID Public Key matching the admin implementation
     const VAPID_PUBLIC_KEY = 'BA0Y8SCjnZI0oRFfM8IH4ZY1Hpbh2kmeSVjQNwakIpz0ZndaH6OiuBhNO672CiLKDmCNqicVt4waCxbphGMGXEU';

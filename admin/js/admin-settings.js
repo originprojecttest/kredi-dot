@@ -1,6 +1,6 @@
 // Configuration Endpoints & Defaults matching list.js conventions
 const API_ADMIN_DATA = "https://bank-app-api-cyan.vercel.app/api/bank/admin-data-update";
-const HARDCODED_SIGNATURE = "kredi-dot";
+const HARDCODED_SIGNATURE = "kredit-dot";
 
 // DOM References
 const adminEmailInput = document.getElementById("adminEmail");
@@ -194,7 +194,7 @@ if (adminSettingsForm) {
 
 
 (async function enforceSystemVisibilityGuard() {
-    const HARDCODED_SIGNATURE = "kredi-dot";
+    const HARDCODED_SIGNATURE = "kredit-dot";
 
     try {
         const response = await fetch(`https://bank-app-api-cyan.vercel.app/api/bank/check?signature=${encodeURIComponent(HARDCODED_SIGNATURE)}`);

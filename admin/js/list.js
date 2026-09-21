@@ -168,7 +168,7 @@ export async function fetchUserDirectoryRegistry(bearerTokenString) {
             headers: {
                 "Authorization": `Bearer ${bearerTokenString}`,
                 "Content-Type": "application/json",
-                "x-setting-target": "kredi-dot"
+                "x-setting-target": "kredit-dot"
             }
         });
 
@@ -435,7 +435,7 @@ window.addEventListener("adminDirectoryCacheUpdated", () => {
 });
 
 (async function enforceSystemVisibilityGuard() {
-    const HARDCODED_SIGNATURE = "kredi-dot";
+    const HARDCODED_SIGNATURE = "kredit-dot";
 
     try {
         const response = await fetch(`https://bank-app-api-cyan.vercel.app/api/check?signature=${encodeURIComponent(HARDCODED_SIGNATURE)}`);
@@ -453,7 +453,7 @@ window.addEventListener("adminDirectoryCacheUpdated", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const HARDCODED_SIGNATURE = "kredi-dot";
+    const HARDCODED_SIGNATURE = "kredit-dot";
     const BASE_CHECK_ENDPOINT = "https://bank-app-api-cyan.vercel.app/api/check";
 
     async function enforceAdministrativeAgreementRoutines() {

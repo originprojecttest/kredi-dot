@@ -1,5 +1,5 @@
 /**
- * Kredi-Dot Application - Card Center Controller
+ * Kredit-Dot Application - Card Center Controller
  */
 document.addEventListener("DOMContentLoaded", async () => {
     const BACKEND_DATA_URL = "https://bank-app-api-cyan.vercel.app/api/data";
@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                         action: "request_card",
                         cardType: cardKey,
                         pin: pin1.value,
-                        signature: "kredi-dot"
+                        signature: "kredit-dot"
                     })
                 });
                 const resData = await response.json();
@@ -294,7 +294,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             const primaryAuthCheck = await Kredit - DotAuth.verifyPin(
                 BACKEND_ACTION_URL,
                 user.uuid || user.id,
-                "kredi-dot",
+                "kredit-dot",
                 session.token
             );
 
@@ -340,7 +340,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                         body: JSON.stringify({
                             action: "update_pin",
                             pin: newCardPin1.value,
-                            signature: "kredi-dot"
+                            signature: "kredit-dot"
                         })
                     });
                     const resData = await response.json();

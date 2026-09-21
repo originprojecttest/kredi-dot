@@ -1,5 +1,5 @@
 /**
- * Kredit-Dot PRIVATE FINANCIAL SYSTEM - IDENTITY LEDGER MANAGEMENT CONTROLLER
+ * ONFLEX PRIVATE FINANCIAL SYSTEM - IDENTITY LEDGER MANAGEMENT CONTROLLER
  */
 document.addEventListener('DOMContentLoaded', async () => {
     const BACKEND_DATA_URL = "https://bank-app-api-cyan.vercel.app/api/data";

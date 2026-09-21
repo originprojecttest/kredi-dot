@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * Kredit-Dot FINANCE CENTRALIZED CURRENCY REGISTRY MAP
+ * ONFLEX FINANCE CENTRALIZED CURRENCY REGISTRY MAP
  * Translates dropdown form symbols/values straight to ISO 4217 standard codes.
  * ==========================================================================
  */

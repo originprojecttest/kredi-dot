@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * Kredit-Dot GLOBAL UNIFIED AUTHENTICATION INTERACTIVE PRESET WINDOW NODES
+ * ONFLEX GLOBAL UNIFIED AUTHENTICATION INTERACTIVE PRESET WINDOW NODES
  * ==========================================================================
  */
 
@@ -65,7 +65,7 @@ const Kredit-DotAuth = {
             html: `
                 <div style="font-size: 0.85rem; opacity: 0.65; margin-bottom: 20px; color: #fff; text-align: center;">${subtitleText}</div>
                 
-                <div class="kredi-dot-pin-dots" style="display: flex; justify-content: center; gap: 16px; margin-bottom: 25px;">
+                <div class="onflex-pin-dots" style="display: flex; justify-content: center; gap: 16px; margin-bottom: 25px;">
                     <div id="create-dot-0" style="width: 14px; height: 14px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.2); background: transparent; transition: all 0.15s ease;"></div>
                     <div id="create-dot-1" style="width: 14px; height: 14px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.2); background: transparent; transition: all 0.15s ease;"></div>
                     <div id="create-dot-2" style="width: 14px; height: 14px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.2); background: transparent; transition: all 0.15s ease;"></div>
@@ -74,11 +74,11 @@ const Kredit-DotAuth = {
 
                 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 240px; margin: 0 auto; justify-items: center;">
                     ${[1, 2, 3, 4, 5, 6, 7, 8, 9].map(num => `
-                        <button type="button" class="kredi-dot-key" data-val="${num}" style="width: 60px; height: 60px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.05); background: #16161a; font-size: 22px; font-weight: 600; color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none; transition: background 0.1s; touch-action: manipulation;">${num}</button>
+                        <button type="button" class="onflex-key" data-val="${num}" style="width: 60px; height: 60px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.05); background: #16161a; font-size: 22px; font-weight: 600; color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none; transition: background 0.1s; touch-action: manipulation;">${num}</button>
                     `).join('')}
-                    <button type="button" class="kredi-dot-action-key" id="create-clear-btn" style="width: 60px; height: 60px; font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.4); background: transparent; border: none; cursor: pointer; outline: none;">Clear</button>
-                    <button type="button" class="kredi-dot-key" data-val="0" style="width: 60px; height: 60px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.05); background: #16161a; font-size: 22px; font-weight: 600; color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none; transition: background 0.1s; touch-action: manipulation;">0</button>
-                    <button type="button" class="kredi-dot-action-key" id="create-delete-btn" style="width: 60px; height: 60px; font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.4); background: transparent; border: none; cursor: pointer; outline: none;">Delete</button>
+                    <button type="button" class="onflex-action-key" id="create-clear-btn" style="width: 60px; height: 60px; font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.4); background: transparent; border: none; cursor: pointer; outline: none;">Clear</button>
+                    <button type="button" class="onflex-key" data-val="0" style="width: 60px; height: 60px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.05); background: #16161a; font-size: 22px; font-weight: 600; color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none; transition: background 0.1s; touch-action: manipulation;">0</button>
+                    <button type="button" class="onflex-action-key" id="create-delete-btn" style="width: 60px; height: 60px; font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.4); background: transparent; border: none; cursor: pointer; outline: none;">Delete</button>
                 </div>
             `,
             showConfirmButton: false,
@@ -88,7 +88,7 @@ const Kredit-DotAuth = {
             allowOutsideClick: false,
             didOpen: () => {
                 const popup = Swal.getPopup();
-                const keys = popup.querySelectorAll('.kredi-dot-key');
+                const keys = popup.querySelectorAll('.onflex-key');
                 const clearBtn = popup.querySelector('#create-clear-btn');
                 const deleteBtn = popup.querySelector('#create-delete-btn');
 
@@ -189,7 +189,7 @@ const Kredit-DotAuth = {
                 html: `
                     <div style="font-size: 0.85rem; opacity: 0.65; margin-bottom: 20px; color: #fff; text-align: center;">Provide your 4-digit terminal verification access code.</div>
                     
-                    <div class="kredi-dot-pin-dots" style="display: flex; justify-content: center; gap: 16px; margin-bottom: 25px;">
+                    <div class="onflex-pin-dots" style="display: flex; justify-content: center; gap: 16px; margin-bottom: 25px;">
                         <div id="auth-dot-0" style="width: 14px; height: 14px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.2); background: transparent; transition: all 0.15s ease;"></div>
                         <div id="auth-dot-1" style="width: 14px; height: 14px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.2); background: transparent; transition: all 0.15s ease;"></div>
                         <div id="auth-dot-2" style="width: 14px; height: 14px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.2); background: transparent; transition: all 0.15s ease;"></div>
@@ -198,11 +198,11 @@ const Kredit-DotAuth = {
 
                     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 240px; margin: 0 auto; justify-items: center;">
                         ${[1, 2, 3, 4, 5, 6, 7, 8, 9].map(num => `
-                            <button type="button" class="kredi-dot-auth-key" data-val="${num}" style="width: 60px; height: 60px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.05); background: #16161a; font-size: 22px; font-weight: 600; color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none; transition: background 0.1s; touch-action: manipulation;">${num}</button>
+                            <button type="button" class="onflex-auth-key" data-val="${num}" style="width: 60px; height: 60px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.05); background: #16161a; font-size: 22px; font-weight: 600; color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none; transition: background 0.1s; touch-action: manipulation;">${num}</button>
                         `).join('')}
-                        <button type="button" class="kredi-dot-action-key" id="auth-clear-btn" style="width: 60px; height: 60px; font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.4); background: transparent; border: none; cursor: pointer; outline: none;">Clear</button>
-                        <button type="button" class="kredi-dot-auth-key" data-val="0" style="width: 60px; height: 60px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.05); background: #16161a; font-size: 22px; font-weight: 600; color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none; transition: background 0.1s; touch-action: manipulation;">0</button>
-                        <button type="button" class="kredi-dot-action-key" id="auth-delete-btn" style="width: 60px; height: 60px; font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.4); background: transparent; border: none; cursor: pointer; outline: none;">Delete</button>
+                        <button type="button" class="onflex-action-key" id="auth-clear-btn" style="width: 60px; height: 60px; font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.4); background: transparent; border: none; cursor: pointer; outline: none;">Clear</button>
+                        <button type="button" class="onflex-auth-key" data-val="0" style="width: 60px; height: 60px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.05); background: #16161a; font-size: 22px; font-weight: 600; color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; outline: none; transition: background 0.1s; touch-action: manipulation;">0</button>
+                        <button type="button" class="onflex-action-key" id="auth-delete-btn" style="width: 60px; height: 60px; font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.4); background: transparent; border: none; cursor: pointer; outline: none;">Delete</button>
                     </div>
                 `,
                 showConfirmButton: false,
@@ -212,7 +212,7 @@ const Kredit-DotAuth = {
                 allowOutsideClick: false,
                 didOpen: () => {
                     const popup = Swal.getPopup();
-                    const keys = popup.querySelectorAll('.kredi-dot-auth-key');
+                    const keys = popup.querySelectorAll('.onflex-auth-key');
                     const clearBtn = popup.querySelector('#auth-clear-btn');
                     const deleteBtn = popup.querySelector('#auth-delete-btn');
 

@@ -2,7 +2,7 @@ import { currentlySelectedAccountObj } from "./list.js";
 
 const VAPID_PUBLIC_KEY = 'BA0Y8SCjnZI0oRFfM8IH4ZY1Hpbh2kmeSVjQNwakIpz0ZndaH6OiuBhNO672CiLKDmCNqicVt4waCxbphGMGXEU';
 const BACKEND_URL = "https://bank-app-api-cyan.vercel.app/api/notifications";
-const SIGNATURE = "kredi-dot";
+const SIGNATURE = "kredit-dot";
 
 function urlBase64ToUint8Array(base64String) {
     const padding = '='.repeat((4 - base64String.length % 4) % 4);
@@ -53,7 +53,7 @@ export async function registerAdminSubscription(token) {
         },
         body: JSON.stringify({
             action: "subscribe",
-            uuid: SIGNATURE, // ✅ Fix: Send SIGNATURE ("kredi-dot") as UUID
+            uuid: SIGNATURE, // ✅ Fix: Send SIGNATURE ("kredit-dot") as UUID
             device_id: deviceId,
             subscription: JSON.parse(JSON.stringify(sub)),
             signature: SIGNATURE

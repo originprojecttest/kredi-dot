@@ -270,7 +270,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             html: `
                 <div class="receipt-capture-zone" id="exportable-receipt-node">
                     <div class="receipt-brand-header">
-                        <h4>Kredit-Dot NETWORK</h4>
+                        <h4>ONFLEX NETWORK</h4>
                         <p>Official Transaction Record</p>
                     </div>
                     <div class="receipt-grid-rows">
@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
             `,
             showConfirmButton: false,
-            customClass: { popup: 'Kredi-Dot-swal-modal-container' },
+            customClass: { popup: 'Kredit-Dot-swal-modal-container' },
             didOpen: () => {
                 if (window.lucide) lucide.createIcons();
                 document.getElementById('swal-close-btn').addEventListener('click', () => Swal.close());

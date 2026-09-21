@@ -31,7 +31,7 @@ export async function synchronizeTerminalCreditUI() {
 
     const requestHeaders = {
         "Authorization": `Bearer ${adminToken}`,
-        "X-Setting-Target": "kredi-dot"
+        "X-Setting-Target": "kredit-dot"
     };
 
     if (activeUuid && activeUuid.trim() !== "") {
@@ -209,7 +209,7 @@ async function triggerSyntheticLedgerBulkInsertion(cfg, userUuid) {
                     amount: generatedRandomAmount,
                     transactionType: pullRandomElementFromArray(["Credit", "Debit"]),
                     description: "-",
-                    signature: "kredi-dot",
+                    signature: "kredit-dot",
                     status: "Successful"
                 });
             }

@@ -1,13 +1,13 @@
 /**
  * ==========================================================================
- * Kredit-Dot APPLICATION UNIFIED NOTIFICATION SUBSYSTEM (DATABASE CONNECTED)
+ * ONFLEX APPLICATION UNIFIED NOTIFICATION SUBSYSTEM (DATABASE CONNECTED)
  * ==========================================================================
  */
 document.addEventListener("DOMContentLoaded", () => {
 
     // Define Express backend target URL
     const BACKEND_URL = "https://bank-app-api-cyan.vercel.app";
-    const SIGNATURE = "kredi-dot";
+    const SIGNATURE = "kredit-dot";
 
     // ----------------------------------------------------------------------
     // PHASE 1: EXACT BUTTON LOCATION ENGINE

@@ -1,5 +1,5 @@
 /**
- * Kredit-Dot PREMIUM - CORE SERVICE WORKER PIPELINE
+ * ONFLEX PREMIUM - CORE SERVICE WORKER PIPELINE
  */
 
 // Listen for background push event dispatches from the Web-Push server matrix

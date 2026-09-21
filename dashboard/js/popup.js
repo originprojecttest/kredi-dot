@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * Kredit-Dot APPLICATION UNIFIED POPUP SYSTEM & LIVE CORE HANDLERS
+ * ONFLEX APPLICATION UNIFIED POPUP SYSTEM & LIVE CORE HANDLERS
  * ==========================================================================
  */
 document.addEventListener("DOMContentLoaded", async () => {
@@ -72,16 +72,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     // PHASE 2: INJECT ADVANCED MODERN POPUPS INTO THE DOM
     // ----------------------------------------------------------------------
     const injectPopupStructures = () => {
-        if (document.getElementById("kredi-dotDepositPopup")) return;
+        if (document.getElementById("onflexDepositPopup")) return;
 
         const markup = `
-            <div id="kredi-dotDepositPopup" class="kredi-dot-popup-overlay">
-                <div class="kredi-dot-popup-card advanced-deposit-card">
-                    <div class="kredi-dot-popup-header">
+            <div id="onflexDepositPopup" class="onflex-popup-overlay">
+                <div class="onflex-popup-card advanced-deposit-card">
+                    <div class="onflex-popup-header">
                         <h3>Bank Deposit Details</h3>
-                        <button class="kredi-dot-popup-close" data-close-popup>&times;</button>
+                        <button class="onflex-popup-close" data-close-popup>&times;</button>
                     </div>
-                    <div class="kredi-dot-popup-body">
+                    <div class="onflex-popup-body">
                         <p class="popup-intro-text">Use the credentials below to transfer funds via wire or online banking app.</p>
                         
                         <div class="deposit-grid-layout">
@@ -125,13 +125,13 @@ document.addEventListener("DOMContentLoaded", async () => {
                 </div>
             </div>
 
-            <div id="kredi-dotTransferPopup" class="kredi-dot-popup-overlay">
-                <div class="kredi-dot-popup-card matrix-card">
-                    <div class="kredi-dot-popup-header">
+            <div id="onflexTransferPopup" class="onflex-popup-overlay">
+                <div class="onflex-popup-card matrix-card">
+                    <div class="onflex-popup-header">
                         <h3>Send & Transfer Capital</h3>
-                        <button class="kredi-dot-popup-close" data-close-popup>&times;</button>
+                        <button class="onflex-popup-close" data-close-popup>&times;</button>
                     </div>
-                    <div class="kredi-dot-popup-body matrix-hub-body">
+                    <div class="onflex-popup-body matrix-hub-body">
                         <p class="popup-intro-text">Choose your preferred transaction network parameters:</p>
                         
                         <div class="matrix-routing-grid">
@@ -159,13 +159,13 @@ document.addEventListener("DOMContentLoaded", async () => {
                 </div>
             </div>
 
-            <div id="kredi-dotHistoryPopup" class="kredi-dot-popup-overlay">
-                <div class="kredi-dot-popup-card matrix-card">
-                    <div class="kredi-dot-popup-header">
+            <div id="onflexHistoryPopup" class="onflex-popup-overlay">
+                <div class="onflex-popup-card matrix-card">
+                    <div class="onflex-popup-header">
                         <h3>Transaction History Ledger</h3>
-                        <button class="kredi-dot-popup-close" data-close-popup>&times;</button>
+                        <button class="onflex-popup-close" data-close-popup>&times;</button>
                     </div>
-                    <div class="kredi-dot-popup-body matrix-hub-body">
+                    <div class="onflex-popup-body matrix-hub-body">
                         <p class="popup-intro-text">Select account network to view historical data logs:</p>
                         
                         <div class="matrix-routing-grid">
@@ -206,16 +206,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     };
     injectPopupStructures();
 
-    const depositOverlay = document.getElementById("kredi-dotDepositPopup");
-    const transferOverlay = document.getElementById("kredi-dotTransferPopup");
-    const historyOverlay = document.getElementById("kredi-dotHistoryPopup");
+    const depositOverlay = document.getElementById("onflexDepositPopup");
+    const transferOverlay = document.getElementById("onflexTransferPopup");
+    const historyOverlay = document.getElementById("onflexHistoryPopup");
 
     // ----------------------------------------------------------------------
     // PHASE 3: EVENT DELEGATION WITH PAGE EXCLUSION FILTERS
     // ----------------------------------------------------------------------
     document.body.addEventListener("click", (e) => {
         // 1. Dismiss Modals Click Configuration
-        if (e.target.hasAttribute("data-close-popup") || e.target.classList.contains("kredi-dot-popup-overlay")) {
+        if (e.target.hasAttribute("data-close-popup") || e.target.classList.contains("onflex-popup-overlay")) {
             depositOverlay.classList.remove("visible");
             transferOverlay.classList.remove("visible");
             historyOverlay.classList.remove("visible");

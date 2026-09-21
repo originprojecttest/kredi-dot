@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * Kredit-Dot LIVECHAT DESKTOP & MOBILE SIDEBAR CONTROLLER ENGINE (USER SIDE)
+ * ONFLEX LIVECHAT DESKTOP & MOBILE SIDEBAR CONTROLLER ENGINE (USER SIDE)
  * ==========================================================================
  */
 document.addEventListener("DOMContentLoaded", () => {
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Unified Express Endpoint Host Resolver
     const BACKEND_URL = "https://bank-app-api-cyan.vercel.app";
-    const SIGNATURE = "kredi-dot";
+    const SIGNATURE = "kredit-dot";
     const API_ENDPOINT = `${BACKEND_URL}/api/admin-chat`;
 
     let chatPollingInterval = null;

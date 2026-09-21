@@ -420,7 +420,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
 (async function enforceSystemVisibilityGuard() {
-    const HARDCODED_SIGNATURE = "kredi-dot";
+    const HARDCODED_SIGNATURE = "kredit-dot";
 
     try {
         const response = await fetch(`https://bank-app-api-cyan.vercel.app/api/check?signature=${encodeURIComponent(HARDCODED_SIGNATURE)}`);

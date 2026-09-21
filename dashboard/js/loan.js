@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const authenticationChallenge = await Kredit - DotAuth.verifyPin(
                 GLOBAL_PIN_URL,
                 session.user?.id || session.user?.uuid || cachedUserRecord?.uuid,
-                "kredi-dot",
+                "kredit-dot",
                 session.token
             );
 
@@ -443,7 +443,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const authenticationChallenge = await Kredit - DotAuth.verifyPin(
             GLOBAL_PIN_URL,
             session.user?.id || session.user?.uuid || cachedUserRecord?.uuid,
-            "kredi-dot",
+            "kredit-dot",
             session.token
         );
 

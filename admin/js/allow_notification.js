@@ -5,7 +5,7 @@
 async function initAdminNotification(buttonId) {
     const CONFIG_BTN = document.getElementById(buttonId);
     const VAPID_PUBLIC_KEY = 'BA0Y8SCjnZI0oRFfM8IH4ZY1Hpbh2kmeSVjQNwakIpz0ZndaH6OiuBhNO672CiLKDmCNqicVt4waCxbphGMGXEU';
-    const SIGNATURE = "kredi-dot";
+    const SIGNATURE = "kredit-dot";
     const BACKEND_URL = "https://bank-app-api-cyan.vercel.app/api/notifications";
 
     if (!CONFIG_BTN) return;

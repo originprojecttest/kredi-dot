@@ -33,7 +33,7 @@ export async function executeMailDispatch(userId, payload) {
         method: "POST",
         headers: {
             "Authorization": `Bearer ${token}`,
-            "x-setting-target": "kredi-dot"
+            "x-setting-target": "kredit-dot"
             // Note: Do NOT set "Content-Type": "application/json" here. 
             // Fetch will automatically set it to multipart/form-data with the correct boundary.
         },
