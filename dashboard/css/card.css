@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ONFLEX FINANCED DASHBOARD - ATM CARD INTERFACE CENTRE STYLES
+   Kredit-Dot FINANCED DASHBOARD - ATM CARD INTERFACE CENTRE STYLES
    ========================================================================== */
 
 .page-title-context {
@@ -56,7 +56,7 @@
     color: #ffffff;
 }
 
-/* Target Specific Skins mapping onto OnFlex Variable Design Arrays */
+/* Target Specific Skins mapping onto Kredit-Dot Variable Design Arrays */
 .spec-mastercard .atm-card-inner {
     background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
 }

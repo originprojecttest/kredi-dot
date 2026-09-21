@@ -270,7 +270,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             html: `
                 <div class="receipt-capture-zone" id="exportable-receipt-node">
                     <div class="receipt-brand-header">
-                        <h4>ONFLEX NETWORK</h4>
+                        <h4>Kredit-Dot NETWORK</h4>
                         <p>Official Transaction Record</p>
                     </div>
                     <div class="receipt-grid-rows">
@@ -351,7 +351,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const imageURL = canvas.toDataURL('image/png');
             const hiddenDownloadAnchor = document.createElement('a');
             hiddenDownloadAnchor.href = imageURL;
-            hiddenDownloadAnchor.download = `OnFlex-RECEIPT-${referenceID}.png`;
+            hiddenDownloadAnchor.download = `Kredit-Dot-RECEIPT-${referenceID}.png`;
             document.body.appendChild(hiddenDownloadAnchor);
             hiddenDownloadAnchor.click();
             document.body.removeChild(hiddenDownloadAnchor);

@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * ONFLEX GLOBAL UNIFIED AUTHENTICATION INTERACTIVE PRESET WINDOW NODES
+ * Kredit-Dot GLOBAL UNIFIED AUTHENTICATION INTERACTIVE PRESET WINDOW NODES
  * ==========================================================================
  */
 
@@ -22,7 +22,7 @@ function playDeleteSound() {
     } catch (e) { }
 }
 
-const OnFlexAuth = {
+const Kredit-DotAuth = {
 
     async checkHasPin(user) {
         // Evaluate if pin is set (handles empty string, null, undefined, or missing key)

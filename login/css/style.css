@@ -1,5 +1,5 @@
 /* ==========================================================================
-   OnFlex Core Desktop Fluid Layout Stylesheet 
+   Kredit-Dot Core Desktop Fluid Layout Stylesheet 
    ========================================================================== */
 
 input,
@@ -189,7 +189,7 @@ input:focus {
     }
 }
 
-/* Custom SweetAlert Injection Themes to fit OnFlex */
+/* Custom SweetAlert Injection Themes to fit Kredit-Dot */
 .kredi-dot-swal-popup {
     border-radius: 16px !important;
     font-family: "Segoe UI", sans-serif !important;

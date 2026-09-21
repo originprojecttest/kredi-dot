@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * ONFLEX APPLICATION UNIFIED THEME RUNTIME INTERFACE
+ * Kredit-Dot APPLICATION UNIFIED THEME RUNTIME INTERFACE
  * ==========================================================================
  */
 document.addEventListener("DOMContentLoaded", () => {

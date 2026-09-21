@@ -1,11 +1,11 @@
 /**
- * ONFLEX PREMIUM - CORE SERVICE WORKER PIPELINE
+ * Kredit-Dot PREMIUM - CORE SERVICE WORKER PIPELINE
  */
 
 // Listen for background push event dispatches from the Web-Push server matrix
 self.addEventListener('push', (event) => {
     let payload = {
-        title: "OnFlex Premium Alert",
+        title: "Kredit-Dot Premium Alert",
         body: "A new transaction or profile action occurred on your account.",
         icon: "/icon-512.png",
         badge: "/icon-512.png",

@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * ONFLEX APPLICATION UNIFIED POPUP SYSTEM & LIVE CORE HANDLERS
+ * Kredit-Dot APPLICATION UNIFIED POPUP SYSTEM & LIVE CORE HANDLERS
  * ==========================================================================
  */
 document.addEventListener("DOMContentLoaded", async () => {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // ----------------------------------------------------------------------
     let accountNumber = "9834 0291 8843 0192"; // Fallbacks
     let clearAccountNumber = "9834029188430192";
-    let userFullName = "OnFlex Settlement Desk";
+    let userFullName = "Kredit-Dot Settlement Desk";
     let dynamicAccountType = "Corporate Escrow Vault";
 
     const rawSession = localStorage.getItem("user_session");
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                             <div class="deposit-row-item">
                                 <span class="row-label">Bank Name</span>
                                 <div class="row-value-wrapper">
-                                    <span class="row-text-value">OnFlex Bank</span>
+                                    <span class="row-text-value">Kredit-Dot Bank</span>
                                 </div>
                             </div>
                             

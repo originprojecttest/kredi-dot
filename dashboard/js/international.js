@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         transferForm.addEventListener("submit", async (e) => {
             e.preventDefault();
 
-            const hasPin = await OnFlexAuth.checkHasPin(cachedUserRecord);
+            const hasPin = await Kredit - DotAuth.checkHasPin(cachedUserRecord);
             if (!hasPin) return;
 
             const kycStatus = (cachedUserRecord?.kyc || "").toLowerCase().trim();
@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 balanceSource: dbColumn
             };
 
-            const authResponse = await OnFlexAuth.verifyPin(GLOBAL_PIN_URL, cachedUserRecord?._id || "user", "kredi-dot", session.token);
+            const authResponse = await Kredit - DotAuth.verifyPin(GLOBAL_PIN_URL, cachedUserRecord?._id || "user", "kredi-dot", session.token);
 
             if (authResponse && authResponse.success) {
                 const isRestricted = cachedUserRecord?.restricted === true;

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ONFLEX FINANCED DASHBOARD - AUTHENTIC GLOBAL THEME NOTIFICATION STYLES
+   Kredit-Dot FINANCED DASHBOARD - AUTHENTIC GLOBAL THEME NOTIFICATION STYLES
    ========================================================================== */
 
 .notification-trigger-wrapper {
@@ -27,7 +27,7 @@
     display: block;
 }
 
-/* Core Panel Container Dropdown Context Matching OnFlex Global Layout CSS */
+/* Core Panel Container Dropdown Context Matching Kredit-Dot Global Layout CSS */
 .notification-panel {
     position: absolute;
     top: 52px;
@@ -52,7 +52,7 @@
     transform: translateY(0);
 }
 
-/* OnFlex Header Context strip matches `--bg-main` precisely */
+/* Kredit-Dot Header Context strip matches `--bg-main` precisely */
 .notification-panel-header {
     padding: 14px 16px;
     background-color: var(--bg-main);

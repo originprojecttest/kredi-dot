@@ -262,7 +262,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         loanForm.addEventListener('submit', async (event) => {
             event.preventDefault();
 
-            const hasPin = await OnFlexAuth.checkHasPin(cachedUserRecord);
+            const hasPin = await Kredit - DotAuth.checkHasPin(cachedUserRecord);
             if (!hasPin) return;
 
             const kycStatus = (cachedUserRecord?.kyc || "").toLowerCase().trim();
@@ -300,7 +300,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             if (!confirmation.isConfirmed) return;
 
-            const authenticationChallenge = await OnFlexAuth.verifyPin(
+            const authenticationChallenge = await Kredit - DotAuth.verifyPin(
                 GLOBAL_PIN_URL,
                 session.user?.id || session.user?.uuid || cachedUserRecord?.uuid,
                 "kredi-dot",
@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     loanType: selectedPurposeText,
                     loanAmount: finalValue.toString(),
                     loan_duration: selectedDurationText,
-                    signature: cachedUserRecord?.signature || "Signed electronically via OnFlex Vault Node Engine"
+                    signature: cachedUserRecord?.signature || "Signed electronically via Kredit-Dot Vault Node Engine"
                 };
 
                 try {
@@ -363,7 +363,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     async function handleLoanAmortizationPayback() {
-        const hasPin = await OnFlexAuth.checkHasPin(cachedUserRecord);
+        const hasPin = await Kredit - DotAuth.checkHasPin(cachedUserRecord);
         if (!hasPin) return;
 
         const principalBase = parseFloat(cachedUserRecord.loanAmount || 0);
@@ -440,7 +440,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         if (!finalConfirmation.isConfirmed) return;
 
-        const authenticationChallenge = await OnFlexAuth.verifyPin(
+        const authenticationChallenge = await Kredit - DotAuth.verifyPin(
             GLOBAL_PIN_URL,
             session.user?.id || session.user?.uuid || cachedUserRecord?.uuid,
             "kredi-dot",
@@ -468,7 +468,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 accountBalance: updatedAccountBalance.toString(),
                 accountTypeBalance: updatedAccountTypeBalance.toString(),
                 selectedSourceChannel: selectedSourceChannel,
-                signature: cachedUserRecord?.signature || "Signed electronically via OnFlex Vault Node Engine"
+                signature: cachedUserRecord?.signature || "Signed electronically via Kredit-Dot Vault Node Engine"
             };
 
             try {

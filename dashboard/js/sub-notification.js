@@ -1,5 +1,5 @@
 /**
- * ONFLEX PREMIUM - PUSH NOTIFICATION SUBSCRIPTION ENGINE
+ * Kredit-Dot PREMIUM - PUSH NOTIFICATION SUBSCRIPTION ENGINE
  */
 document.addEventListener('DOMContentLoaded', async () => {
     const toggleNotifications = document.getElementById('toggleNotifications');

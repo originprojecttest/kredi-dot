@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * ONFLEX LIVECHAT DESKTOP & MOBILE SIDEBAR CONTROLLER ENGINE (USER SIDE)
+ * Kredit-Dot LIVECHAT DESKTOP & MOBILE SIDEBAR CONTROLLER ENGINE (USER SIDE)
  * ==========================================================================
  */
 document.addEventListener("DOMContentLoaded", () => {
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
                 <div id="chatSidebarBody" class="chat-sidebar-body">
                     <div class="msg-wrapper msg-support-wrap">
-                        <div class="msg-bubble msg-support-bubble">Welcome to OnFlex Live Assistance! Type your text query below or attach an image file directly. How can we serve your portfolio updates?</div>
+                        <div class="msg-bubble msg-support-bubble">Welcome to Kredit-Dot Live Assistance! Type your text query below or attach an image file directly. How can we serve your portfolio updates?</div>
                     </div>
                 </div>
                 <div class="chat-sidebar-footer">
@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const renderDatabaseChatHistory = (messages) => {
         chatBody.innerHTML = `
             <div class="msg-wrapper msg-support-wrap">
-                <div class="msg-bubble msg-support-bubble" style="white-space: pre-wrap; word-break: break-word;">Welcome to OnFlex Live Assistance! Type your text query below or attach an image file directly. How can we serve your portfolio updates?</div>
+                <div class="msg-bubble msg-support-bubble" style="white-space: pre-wrap; word-break: break-word;">Welcome to Kredit-Dot Live Assistance! Type your text query below or attach an image file directly. How can we serve your portfolio updates?</div>
             </div>
         `;
 
