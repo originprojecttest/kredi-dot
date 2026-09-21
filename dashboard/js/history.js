@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
             `,
             showConfirmButton: false,
-            customClass: { popup: 'Kredit-Dot-swal-modal-container' },
+            customClass: { popup: 'Onflex-swal-modal-container' },
             didOpen: () => {
                 if (window.lucide) lucide.createIcons();
                 document.getElementById('swal-close-btn').addEventListener('click', () => Swal.close());

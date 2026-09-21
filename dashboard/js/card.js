@@ -1,5 +1,5 @@
 /**
- * Kredit-Dot Application - Card Center Controller
+ * Onflex Application - Card Center Controller
  */
 document.addEventListener("DOMContentLoaded", async () => {
     const BACKEND_DATA_URL = "https://bank-app-api-cyan.vercel.app/api/data";
